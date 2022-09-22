@@ -40,7 +40,7 @@ submit.addEventListener("click", () => {
     const dateSum = addDate(input);
     checkLuckyNum(dateSum, ln);
   } else {
-    showText("🛑 Please! Enter Both Digit");
+    showText("🛑 Please! Enter both data to find your luck 🙏");
     policeWhistleSE.play();
   }
 });
