@@ -8,17 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <div class="title">
-        <h1>Is Your Birthday Lucky?</h1>
-        <h3>
-          <p>
-            Disclaimer: This site in any way doesn't store your <b>DOB</b>(Date
-            of Birth). It is just a fun app for enjoyment purpose
-          </p>
-        </h3>
+    <div class="title">
+      <h1>Is Your Birthday Lucky?</h1>
+      <h3>
+        <p>
+          Disclaimer: This site in any way doesn't store your <b>DOB</b>(Date of
+          Birth). It is just a fun app for enjoyment purpose
+        </p>
+      </h3>
+    </div>
+
+    <div class="input">
+      <label for="dob"><b> Date of Birth: </b> </label>
+      <input type="date" name="user-dob" id="dob" />
+      <br />
+      <label for="lucky-num"><b> Lucky Number: </b> </label>
+      <input type="number" name="user-dob" id="lucky-num" />
+      <br />
+      <div class="btn-grp">
+        <button type="submit" id="submit">submit</button>
+        <button type="submit" id="reset">reset</button>
       </div>
-    </main>
+
+      <br /><br />
+      <h1>
+        <p id="message"></p>
+      </h1>
+      <br />
+    </div>
     <script src="/main.js"></script>
   </body>
 </html>

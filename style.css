@@ -3,7 +3,10 @@
 :root {
   font-family: "Inter", sans-serif;
   --back-color1: black;
+  --back-color2: #3366ff;
   --text-color: white;
+  --global-padding: 1rem;
+  --global-border-radius: 2rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -12,13 +15,43 @@ body {
   text-align: center;
 }
 
-main {
-  padding: 1rem;
-}
-
 .title {
   padding: 1rem;
   border-radius: 0.7rem;
   background-color: var(--back-color1);
   color: var(--text-color);
+}
+
+.input {
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: var(--global-border-radius);
+  background-color: var(--back-color2);
+  color: var(--text-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: transparent;
+  font-size: large;
+  margin: 1rem 0;
+  border: 4px solid;
+  outline: none;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: var(--global-border-radius);
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: black;
+  color: wheat;
 }
