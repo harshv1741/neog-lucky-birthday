@@ -1,13 +1,18 @@
 const dateInput = document.querySelector("#dob");
 const luckyNum = document.querySelector("#lucky-num");
 const submit = document.querySelector("#submit");
+const reset = document.querySelector("#reset");
 const text = document.querySelector("#message");
+const policeWhistleSE = document.querySelector("#policewhistle");
+const failSE = document.querySelector("#fail-sound-effect");
+const successSE = document.querySelector("#success-sound-effect");
+const resetSE = document.querySelector("#reset-sound-effect");
 
 const addDate = (date) => {
   let add = 0;
   date = date.replaceAll("-", "");
   for (let count of date) {
-    add = add + Number(count);
+    add += Number(count);
   }
   return add;
 };
@@ -18,11 +23,12 @@ function showText(msg) {
 }
 
 function checkLuckyNum(dateSum, ln) {
-  console.log(dateSum, ln);
   if (dateSum % ln == 0) {
-    return showText(ln + " is your lucky number! 🥳🥳🎊🎉");
+    showText(ln + " is your lucky number! 🥳🥳🎊🎉");
+    successSE.play();
   } else {
     showText(ln + " is not your Lucky Number 🤔");
+    failSE.play();
   }
 }
 
@@ -34,6 +40,14 @@ submit.addEventListener("click", () => {
     const dateSum = addDate(input);
     checkLuckyNum(dateSum, ln);
   } else {
-    showText("Please! Enter Both Digit 🛑");
+    showText("🛑 Please! Enter Both Digit");
+    policeWhistleSE.play();
   }
+});
+
+reset.addEventListener("click", () => {
+  text.innerText = "";
+  luckyNum.value = "none";
+  dateInput.value = "none";
+  resetSE.play();
 });

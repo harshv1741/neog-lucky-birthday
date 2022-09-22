@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Title Section -->
     <div class="title">
       <h1>Is Your Birthday Lucky?</h1>
       <h3>
         <p>
           Disclaimer: This site in any way doesn't store your <b>DOB</b>(Date of
-          Birth). It is just a fun app for enjoyment purpose
+          Birth). It's just a fun app for enjoyment purpose
         </p>
       </h3>
     </div>
 
+    <!-- Input Section -->
     <div class="input">
       <label for="dob"><b> Date of Birth: </b> </label>
       <input type="date" name="user-dob" id="dob" />
@@ -29,13 +31,26 @@
         <button type="submit" id="submit">submit</button>
         <button type="submit" id="reset">reset</button>
       </div>
-
-      <br /><br />
-      <h1>
+      <br />
+      <h2>
         <p id="message"></p>
-      </h1>
+      </h2>
       <br />
     </div>
+
+    <!-- Audio Effect Section -->
+    <audio id="policewhistle">
+      <source src="sound/policewhistle.wav" type="audio/wav" />
+    </audio>
+    <audio id="fail-sound-effect">
+      <source src="sound/fail-trumpet.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="success-sound-effect">
+      <source src="sound/tada.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="reset-sound-effect">
+      <source src="sound/reset.mp3" type="audio/mp3" />
+    </audio>
     <script src="/main.js"></script>
   </body>
 </html>
