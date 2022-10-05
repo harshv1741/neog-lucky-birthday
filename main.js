@@ -3,7 +3,7 @@ const luckyNum = document.querySelector("#lucky-num");
 const submit = document.querySelector("#submit");
 const reset = document.querySelector("#reset");
 const text = document.querySelector("#message");
-const policeWhistleSE = document.querySelector("#policewhistle");
+const infoSE = document.querySelector("#infoSE");
 const failSE = document.querySelector("#fail-sound-effect");
 const successSE = document.querySelector("#success-sound-effect");
 const resetSE = document.querySelector("#reset-sound-effect");
@@ -40,8 +40,8 @@ submit.addEventListener("click", () => {
     const dateSum = addDate(input);
     checkLuckyNum(dateSum, ln);
   } else {
-    showText("🛑 Please! Enter both data to find your luck 🙏");
-    policeWhistleSE.play();
+    infoSE.play();
+    showText("🛑 Please! Enter Both Digit");
   }
 });
 
