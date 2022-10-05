@@ -47,7 +47,7 @@ submit.addEventListener("click", () => {
 
 reset.addEventListener("click", () => {
   text.innerText = "";
-  luckyNum.value = "none";
-  dateInput.value = "none";
+  luckyNum.value = "";
+  dateInput.value = "";
   resetSE.play();
 });
