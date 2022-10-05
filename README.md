@@ -8,4 +8,9 @@ This website tells you if your birthday is lucky or not.y
 # Deployment Service 
 - [Netlify](https://netlify.com)
 
+# Language Used
+- HTML
+- CSS
+- JS
+
 # Click [here](https://harshv-lucky-birthday.netlify.app/) to redirect to my website.
