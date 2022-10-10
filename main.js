@@ -40,8 +40,8 @@ submit.addEventListener("click", () => {
     const dateSum = addDate(input);
     checkLuckyNum(dateSum, ln);
   } else {
-    infoSE.play();
     showText("🛑 Please! Enter Both Digit");
+    infoSE.play();
   }
 });
 
