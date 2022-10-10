@@ -38,8 +38,8 @@ submit.addEventListener("click", () => {
 
   if (input && lucky_number) {
     const dateSum = addDate(input);
-    console.log(dateSum);
-    console.log(typeof dateSum);
+    // console.log(dateSum);
+    // console.log(typeof dateSum);
     checkLuckyNum(dateSum, lucky_number);
   } else {
     showText("🛑 Please! Enter both data");
