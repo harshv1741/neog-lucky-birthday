@@ -33,15 +33,17 @@ function checkLuckyNum(dateSum, ln) {
 }
 
 submit.addEventListener("click", () => {
-  const input = Number(dateInput.value);
-  const ln = Number(luckyNum.value);
+  var input = dateInput.value;
+  var lucky_number = luckyNum.value;
 
-  if (input && ln) {
+  if (input && lucky_number) {
     const dateSum = addDate(input);
-    checkLuckyNum(dateSum, ln);
+    console.log(dateSum);
+    console.log(typeof dateSum);
+    checkLuckyNum(dateSum, lucky_number);
   } else {
-    infoSE.play();
     showText("🛑 Please! Enter both data");
+    infoSE.play();
   }
 });
 
