@@ -2,10 +2,11 @@
 
 :root {
   font-family: "Inter", sans-serif;
-  --back-color1: black;
+  --back-color1: #000000;
   --back-color2: #3366ff;
-  --text-color: white;
+  --text-color: #ffffff;
   --global-border-radius: 2rem;
+  text-align: center;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
   color: var(--text-color);
 }
 
-.input {
+.input-container {
   padding: 1rem;
   border-radius: var(--global-border-radius);
   background-color: var(--back-color2);
@@ -38,11 +39,11 @@ input {
   outline: none;
   border-radius: 5px;
   padding: 0.5rem;
-  border: 4px solid;
+  border: 4px solid black;
   font-size: large;
   margin: 1rem 0;
-  width: 50%;
-  border: 4px solid;
+  width: 100%;
+  max-width: 200px;
   transition-duration: 0.4s;
 }
 
@@ -63,6 +64,54 @@ button {
 }
 
 button:hover {
-  background-color: black;
-  color: wheat;
+  background-color: #000000;
+  color: #f5deb3;
 }
+
+/* Footer (START) */
+
+/* Custom footer style */
+footer {
+  margin: 5rem 1rem 1rem 1rem;
+  color: white;
+}
+
+/* To hold all items in the footer tag in one place */
+.footer-container {
+  text-decoration: none;
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #000000;
+}
+
+/* Heading of the footer tag */
+.footer-head {
+  text-align: center;
+}
+
+/* Content of the footer tag */
+.footer-content {
+  padding-bottom: 1rem;
+  display: block;
+  align-items: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* website icons for the footer */
+.footer-icon {
+  display: inline;
+  align-items: justify;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+#page-end {
+  padding-top: 6rem;
+}
+
+/* Footer (END) */
